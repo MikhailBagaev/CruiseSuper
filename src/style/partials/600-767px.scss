@@ -1,0 +1,23 @@
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+
+   header.header {
+       height: 230px;
+	   .logo {
+	        width: 47%;
+	        margin-top: 60px;
+	    }
+	    .site-search {
+	        width: 43%;
+	        position: absolute;
+	        top: -20px;
+	        right: 5.3%;
+	    }
+	    .socials {  
+	        width: 43%;              
+	        position: absolute;
+	        top: 70px;
+	        right: 5.3%;
+	    }
+    }
+
+}

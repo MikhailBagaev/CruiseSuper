@@ -1,0 +1,33 @@
+@media only screen and (min-width: 940px) and (max-width: 1020px){
+	/*---------HEADER----------*/
+	header.header {
+		    .socials {
+		        width: 29%;
+		    }
+		    .logo {
+		        margin-top: 35px;
+		    }
+	}
+	.subscribe-news {
+	    form { 
+	        width: 92.45%;
+	            label {
+	                font-size: 18px;
+	            }
+		        input:not(:last-child) {
+		            width: 25%;		            
+		        }
+	    }
+	}
+	.reasons-list {	    
+		    .reasons-list__item {
+		    width: 40%;
+		    }
+	}    
+	.copyright,
+	.email-address,
+	.author {
+	    font-size: 13px;
+	}
+}
+

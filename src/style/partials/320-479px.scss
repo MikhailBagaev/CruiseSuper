@@ -1,0 +1,169 @@
+@media only screen and (min-width: 280px) and (max-width: 479px) {
+    .wrapper {
+        height: 100%;
+    }
+    header.header {
+        height: 100%;
+        flex-direction: column;
+            .header__item {
+                display: block;
+                width: 90%;
+                margin: 20px auto 0;
+            }
+            .socials {
+                margin: -20px auto 20px;
+            }
+    }
+     .menu {	
+	width: 100%;	
+	height: 52px;
+	margin-top: 2px;
+	background-color: #1594a5;	
+    }
+	.menu--top {
+		margin-top: 2px;
+		    label.showmenu {
+		        display: block;
+		        width: 30px;		        
+		        font-size: 30px;
+		        color: white;
+		        padding-top: 11px;
+		        margin-left: 3%;
+		        cursor: pointer;		        
+	        }		    
+	}
+	.list-links {
+	    width: 95%;	    	    
+	    margin: 12px auto 0;	    
+	    display: block;	    	    
+	    position: relative;
+	    z-index: 10; 
+	    transform: translateX(-102%);
+	    transition: transform .7s;
+	    will-change: transform;
+	    backface-visibility: hidden;	    
+			.list-links__item {
+			    line-height: 30px;	
+			    background-color: white;
+			    padding-left: 30px;	
+			    border-bottom: 1px solid #1594a5;					
+				    .list-links__link {				        
+						color: #1594a5;
+						text-shadow: 0.5px 0.9px 0 #117d8b;
+						display: block; 
+						height: 100%;      
+				    }			
+					.list-links__link:not(.active):hover {
+					    transform: scale(1.05);
+					    opacity: 0.7;					   
+				    }
+					.active {
+					    background-color: white;
+					    padding: 0;		                				    
+				    }   
+			}
+	}
+		#showmenu:checked~.list-links {		    
+	        transform: translateX(0);
+	    }
+	    .subscribe-news::before,
+    .subscribe-news::after {
+        display: none;
+    }
+    .subscribe-news {
+        margin: 30px auto 0;
+	    padding: 5px 0 20px;
+	    height: 100%;
+	    width: 92.45%;		        
+		    form { 
+		        width: 92.45%;
+		        height: auto;	
+		        margin: 0 auto;
+			    padding-top: 1px;    
+		            label {		                
+		                font-size: 20px;
+					    display: block;
+					    text-align: center;					    
+					    width: 85%;
+					    margin: 13px auto 0;
+					    background: none;
+					    padding: 0;
+		            }
+		            label::before {
+		                display: inline-block;
+		                content: '';
+		                width: 16px;
+		                height: 16px;
+		                background: url('../img/pencil.png') no-repeat 0 1px; 
+		                margin-right: 10px; 
+		            }
+			        input:not(:last-child) {
+			            display: block;
+			            width: 90%;
+			            margin: 18px auto 0;
+			        }
+			        input[type="submit"] {
+			            position: static;
+			            display: block;
+			            margin: 18px auto 0;
+			        }
+		    }
+	} 
+	section.introduction {
+	    width: 90%;
+	        .portrait {
+	            float: none;
+			    width: 50%;
+		        margin: 10px auto 0;
+	        }
+	        .greetings {
+	            float: none;
+	            width: 100%;
+	            padding: 10px 4%;
+	            margin: 0;
+	        }
+    }
+    .reasons-list {
+        width: 90%;
+	        .reasons-list__item {
+	            width: 100%;
+	        }    
+    } 
+    section.additional-information {
+        width: 90%;
+        padding: 10px 4%;
+    }
+    .menu--bottom {
+        height: 100%;
+		    .wrapper--footer {
+			    height: 90px;
+			    display: flex;
+			    flex-direction: column;
+			    justify-content: space-around;	    
+			        p.email-address,
+			        p.copyright,
+			        p.author,
+			        div.socials--bottom {
+			            float: none;
+			            margin: 0 auto;
+			            font-size: 14px;			            
+			        }  
+			        p.email-address {
+			            position: static;
+			            order: -1;
+			        }
+			        .socials--bottom {
+			            order: -3;
+			                .socials-list--bottom {
+			                    margin: 0;
+			                }
+			        }
+			        .author {
+			            order: -2;
+			        }
+			        p.copyright {
+			            font-size: 10px;
+			        }
+			}        
+    } 
+}
